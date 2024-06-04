@@ -117,8 +117,8 @@ function Home() {
         <button type="submit" className="btn btn-primary mb-3">Apply Filters</button>
       </form>
       <div className="row">
-        {products.map(product => (
-          <div key={product.id} className="col-md-4 mb-4">
+        {products.map((product,idx) => (
+          <div key={idx} className="col-md-4 mb-4">
             <div className="card">
               <img src={placeholderImage} className="card-img-top" alt={product.name} />
               <div className="card-body">
