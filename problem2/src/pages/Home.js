@@ -125,7 +125,7 @@ function Home() {
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.company}</p>
                 <p className="card-text">${product.price}</p>
-                <Link to={{ pathname: `/product/${product.id}`, state: { product } }} className="btn btn-primary">View Details</Link>
+                <Link to={{ pathname: `/product`, state: { product } }} className="btn btn-primary">View Details</Link>
               </div>
             </div>
           </div>
